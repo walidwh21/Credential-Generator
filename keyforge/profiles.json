@@ -1,0 +1,97 @@
+{
+  "_comment": "Illustrative presets. Company names are trademarks of their owners; these profiles only borrow a colour palette and are NOT official policies or affiliated with any company. Add your own in a separate JSON file and pass --profiles FILE.",
+  "profiles": [
+    {
+      "id": "general",
+      "name": "KeyForge",
+      "tagline": "General-purpose credential generator",
+      "action_label": "Generate password",
+      "theme": {},
+      "policy": {"mode": "password", "length": 20}
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla",
+      "tagline": "Vehicle & energy account passwords",
+      "action_label": "Generate account password",
+      "theme": {
+        "bg": "#0e0e10", "surface": "#18181c", "border": "#2b2b31",
+        "text": "#f2f2f4", "muted": "#9a9aa4",
+        "accent": "#e31937", "on_accent": "#ffffff", "field": "#101013"
+      },
+      "policy": {"mode": "password", "length": 20, "avoid_ambiguous": true}
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "tagline": "Memorable passphrases for your account",
+      "action_label": "Generate passphrase",
+      "theme": {
+        "bg": "#ffffff", "surface": "#f8f9fa", "border": "#dadce0",
+        "text": "#202124", "muted": "#5f6368",
+        "accent": "#1a73e8", "on_accent": "#ffffff", "field": "#ffffff"
+      },
+      "policy": {"mode": "passphrase", "length": 7, "separator": "-", "capitalize": true, "add_number": true}
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "tagline": "Work & school account passwords",
+      "action_label": "Generate password",
+      "theme": {
+        "bg": "#f3f2f1", "surface": "#ffffff", "border": "#c8c6c4",
+        "text": "#201f1e", "muted": "#605e5c",
+        "accent": "#0078d4", "on_accent": "#ffffff", "field": "#faf9f8"
+      },
+      "policy": {"mode": "password", "length": 16, "symbol_set": "!@#$%^&*-_+="}
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "tagline": "Cloud access keys & API secrets",
+      "action_label": "Generate access secret",
+      "theme": {
+        "bg": "#131a22", "surface": "#1c2733", "border": "#2e3d4d",
+        "text": "#eef2f6", "muted": "#9db0c3",
+        "accent": "#ff9900", "on_accent": "#131a22", "field": "#111820"
+      },
+      "policy": {"mode": "token", "length": 40}
+    },
+    {
+      "id": "apple",
+      "name": "Apple",
+      "tagline": "Easy-to-type passwords for every device",
+      "action_label": "Generate password",
+      "theme": {
+        "bg": "#f5f5f7", "surface": "#ffffff", "border": "#d2d2d7",
+        "text": "#1d1d1f", "muted": "#6e6e73",
+        "accent": "#0071e3", "on_accent": "#ffffff", "field": "#f5f5f7"
+      },
+      "policy": {"mode": "password", "length": 18, "avoid_ambiguous": true, "symbols": false}
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "tagline": "Personal access tokens & deploy keys",
+      "action_label": "Generate token",
+      "theme": {
+        "bg": "#0d1117", "surface": "#161b22", "border": "#30363d",
+        "text": "#e6edf3", "muted": "#8b949e",
+        "accent": "#2ea043", "on_accent": "#ffffff", "field": "#0d1117"
+      },
+      "policy": {"mode": "token", "length": 40}
+    },
+    {
+      "id": "acme",
+      "name": "Acme Corp",
+      "tagline": "Example of a custom company profile",
+      "action_label": "Generate staff password",
+      "theme": {
+        "bg": "#fbf7f0", "surface": "#ffffff", "border": "#e4d9c6",
+        "text": "#2b2118", "muted": "#7a6a58",
+        "accent": "#b45309", "on_accent": "#ffffff", "field": "#fbf7f0"
+      },
+      "policy": {"mode": "password", "length": 24, "symbol_set": "!@#$%&*?"}
+    }
+  ]
+}

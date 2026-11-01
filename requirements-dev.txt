@@ -1,0 +1,2 @@
+# Only needed to regenerate screenshots (tools/render_previews.py)
+pillow>=10
